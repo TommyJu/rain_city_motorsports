@@ -31,11 +31,6 @@ h1 {
     font-family: 'Play', sans-serif;
 }
 
-#main-logo {
-    width: 140px;
-    height: auto;
-}
-
 /* #image-container {
     width: 100%;
     display: flex;
@@ -53,8 +48,30 @@ h1 {
     align-items: center;
 }
 
-#hero div {
-    /* width: 33.33%; */
+#main-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 140px;
+    height: auto;
+}
+
+#hero-text-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-text-container h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+/* Three-image background for hero section */
+#left-hero-image, #middle-hero-image, #right-hero-image {
     flex: 1;
     height: 100%;
     filter: brightness(0.5);
@@ -133,5 +150,9 @@ h1 {
 @media (max-width: 500px) {
     #middle-hero-image {
         display: none;
+    }
+
+    #hero-text-container h1 {
+        font-size: 2rem;
     }
 }
