@@ -206,3 +206,18 @@ h1 {
         font-size: 2rem;
     }
 }
+
+/* About us section cards */
+@media (max-width: 900px) {
+    .about-us-card {
+        flex-direction: column;
+    }
+
+    .about-us-card img {
+        width: 100%;
+    }
+
+    .about-us-text-container {
+        width: 100%;
+    }
+}
