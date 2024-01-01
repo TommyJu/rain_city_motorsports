@@ -79,12 +79,20 @@ textarea {
 }
 
 #contact-info-form a:hover {
-    color: skyblue;
+    color: #87ceeb;
     transition: 0.5s;
 }
 
 #form-contents span {
     color: red;
+}
+
+.copy-icon {
+    margin-left: 18px;
+}
+
+.copy-icon:hover {
+    cursor: pointer;
 }
 
 /* Hero Section */
