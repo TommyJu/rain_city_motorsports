@@ -31,6 +31,21 @@ h1 {
     font-family: 'Play', sans-serif;
 }
 
+/* Form Modal */
+label {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
+
+#form-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 /* Hero Section */
 #hero {
     width: 100%;
@@ -342,9 +357,17 @@ footer a:hover {
     }
 }
 
-/* Increase font size for larger viewports */
+/* Increase font and button size for larger viewports */
 @media (min-width: 1100px) {
     #upper-call-to-action p {
+        font-size: 1.2rem;
+    }
+
+    button {
+        height: 60px;
+        width: 140px;
+    }
+    button span {
         font-size: 1.2rem;
     }
 }
