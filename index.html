@@ -21,7 +21,6 @@
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
-                <form action="https://formspree.io/f/mnqeadgr" method="POST"></form>
                 <div class="modal-header bg-dark">
                     <h5 class="modal-title" id="contactModalLabel">Contact Rain City Motorsports</h5>
                     <button type="button" class="btn-close bg-light" data-bs-dismiss="modal"
@@ -40,31 +39,32 @@
                             <img onclick="copyEmail()" src="assets/copy.png" class="copy-icon" alt="Copy email icon">
                         </div>
                     </div>
-                    <div id="form-contents">
-                        <label for="name">
-                            Name<span>*</span>
-                        </label>
-                        <input type="text" name="name" required>
+                    <form action="https://formspree.io/f/mnqeadgr" method="POST">
+                        <div id="form-contents">
+                            <label for="name">
+                                Name<span>*</span>
+                            </label>
+                            <input type="text" name="name" required>
 
-                        <label for="email">
-                            Email<span>*</span>
-                        </label>
-                        <input type="email" name="email" required>
+                            <label for="email">
+                                Email<span>*</span>
+                            </label>
+                            <input type="email" name="email" required>
 
-                        <label for="phone">Phone<span>*</span></label>
-                        <input type="tel" name="phone" required>
+                            <label for="phone">Phone<span>*</span></label>
+                            <input type="tel" name="phone" required>
 
-                        <label>
-                            Comments or Questions
-                        </label>
-                        <textarea name="message"></textarea>
-                    </div>
+                            <label for="message">
+                                Comments or Questions
+                            </label>
+                            <textarea name="message"></textarea>
+                        </div>
+                        <div class="modal-footer bg-dark">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="submit" class="btn btn-info">Submit</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="modal-footer bg-dark">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-info">Submit</button>
-                </div>
-                </form>
             </div>
         </div>
     </div>
@@ -147,7 +147,8 @@
                         <span>Contact Us</span>
                     </button>
                     <div id="social-media-icons">
-                        <a href="https://www.google.com/maps/place/Rain+City+Motorsports+Ltd.,+1515+Broadway+St+%23603,+Port+Coquitlam,+BC+V3C+6M2/@49.2406553,-122.7656729,17z/data=!4m6!3m5!1s0x5485d7d50e08c10b:0xdb13470d0fc6a125!8m2!3d49.2406553!4d-122.7656729!16s%2Fg%2F11rwx7sp5f" target="_blank">
+                        <a href="https://www.google.com/maps/place/Rain+City+Motorsports+Ltd.,+1515+Broadway+St+%23603,+Port+Coquitlam,+BC+V3C+6M2/@49.2406553,-122.7656729,17z/data=!4m6!3m5!1s0x5485d7d50e08c10b:0xdb13470d0fc6a125!8m2!3d49.2406553!4d-122.7656729!16s%2Fg%2F11rwx7sp5f"
+                            target="_blank">
                             <img src="assets/google.png" alt="Google logo">
                         </a>
                         <a href="https://www.instagram.com/raincitymotorsports/" target="_blank">
