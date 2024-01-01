@@ -413,6 +413,13 @@ footer a:hover {
     }
 }
 
+@media (min-width: 1300px) {
+    #google-map {
+        height: 450px;
+        width: 600px;
+    }
+}
+
 @media (min-width: 1600px) {
     #hero-text-container h1 {
         font-size: 4rem;
