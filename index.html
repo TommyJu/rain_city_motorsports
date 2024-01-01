@@ -19,28 +19,47 @@
 <body>
     <!-- Modal containing contact us form -->
     <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl modal-fullscreen-sm-down">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <form action="https://formspree.io/f/mnqeadgr" method="POST"></form>
                 <div class="modal-header bg-dark">
                     <h5 class="modal-title" id="contactModalLabel">Contact Rain City Motorsports</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body bg-dark">
+                    <div id="contact-info">
+                        <div id="phone-text">
+                            <img src="assets/phone.png" alt="">
+                            <a href="">604-123-4567</a>
+                        </div>
+                        <div id="email-text">
+                            <img src="assets/email.png" alt="">
+                            <a href="">sample</a>
+                        </div>
+                    </div>
                     <div id="form-contents">
-                        <label>
-                            Your email:
-                            <input type="email" name="email">
+                        <label for="name">
+                            Name<span>*</span>
                         </label>
-                        <label>
-                            Your message:
-                            <textarea name="message"></textarea>
+                        <input type="text" name="name" required>
+
+                        <label for="email">
+                            Email<span>*</span>
                         </label>
+                        <input type="email" name="email" required>
+
+                        <label for="phone">Phone<span>*</span></label>
+                        <input type="tel" name="phone" required>
+                        
+                        <label>
+                            Comments or Questions
+                        </label>
+                        <textarea name="message"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer bg-dark">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-info">Submit</button>
                 </div>
                 </form>
             </div>
@@ -55,7 +74,7 @@
         <!-- Logo and text overlay -->
         <div id="hero-text-container">
             <h1 class="tracking-in-expand">MAKE YOUR DREAM BUILD A REALITY</h1>
-            <button type="button" class="btn btn-info text-focus-in" data-bs-toggle="modal"
+            <button type="button" class="btn btn-info text-focus-in contact-button" data-bs-toggle="modal"
                 data-bs-target="#contactModal">
                 <span>Contact Us</span>
             </button>
@@ -116,7 +135,7 @@
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <div id="button-container">
                     <h3>Rain City Motorsports</h3>
-                    <button type="button" class="btn btn-info text-focus-in" data-bs-toggle="modal"
+                    <button type="button" class="btn btn-info text-focus-in contact-button" data-bs-toggle="modal"
                         data-bs-target="#contactModal">
                         <span>Contact Us</span>
                     </button>

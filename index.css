@@ -40,10 +40,48 @@ h5 {
     color: white;
 }
 
+#contact-info {
+    display: flex;
+    gap: 20px;
+}
+
 #form-contents {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.modal-body {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#contact-info img {
+    filter: invert(100%) sepia(66%) saturate(216%) hue-rotate(193deg) brightness(116%) contrast(100%);
+    height: auto;
+    width: 30px;
+}
+
+#contact-info a {
+    color: white;
+    margin-left: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+textarea {
+    height: 100px;
+}
+
+#contact-info a:hover {
+    color: skyblue;
+    transition: 0.5s;
+}
+
+#form-contents span {
+    color: red;
 }
 
 /* Hero Section */
@@ -363,11 +401,11 @@ footer a:hover {
         font-size: 1.2rem;
     }
 
-    button {
+    .contact-button {
         height: 60px;
         width: 140px;
     }
-    button span {
+    .contact-button span {
         font-size: 1.2rem;
     }
 }
